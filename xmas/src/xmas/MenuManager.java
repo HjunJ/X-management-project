@@ -38,7 +38,13 @@ public class MenuManager {
 				}
 			}
 			else if(str == '3') {
-				//추후 구현 필요 , 구조체를 이용하여 회원 정보를 저장하고 묶어서 보여줌
+				System.out.println("메뉴로 나가시려면 0을, 회원 입력을 계속하시려면 1을 입력하십시오: ");
+				NumAccept = input.nextInt();				
+				if(NumAccept == 0) continue;
+				else if(NumAccept == 1) {
+					MemberName = input.next();
+					continue;
+				}
 			}
 			else if(str == '4') {
 				System.out.println(MemberName);
@@ -48,9 +54,7 @@ public class MenuManager {
 			}
 			else if(str == '6') break;
 		}
-		
-		
-		
+	
 	}
 
 }
