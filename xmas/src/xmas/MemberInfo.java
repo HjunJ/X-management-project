@@ -39,7 +39,7 @@ public class MemberInfo {
 		System.out.println("PT finish : " + PTdate2);
 		System.out.println("");
 	}
-	void delInfo() {
+	void initInfo() {
 		this.name = null;
 		this.age = -1;
 		this.mass = -1;
