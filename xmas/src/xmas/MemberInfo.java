@@ -9,7 +9,16 @@ public class MemberInfo {
 	int PTdate1;
 	int PTdate2;
 	Scanner input = new Scanner(System.in);
-	void getInfo() {
+	MemberInfo(String name, int age, double mass, int PTdate1, int PTdate2){
+		this.name = name;
+		this.age = age;
+		this.mass = mass;
+		this.PTdate1 = PTdate1;
+		this.PTdate2 = PTdate2;
+	}
+	MemberInfo() {
+	}
+	void setInfo() {
 		System.out.println("name: ");
 		this.name = input.next();
 		System.out.println("age: ");
